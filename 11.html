@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>홈페이지
+  </title>
+  <style>
+  body{
+    max-width: 1200px;
+    background-color: #cfccbb;
+  }
+* {margin:0; padding:0; outline:0; vertical-align:top; -webkit-text-size-adjust:none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display:block; margin:0px; padding:0px; }
+ul, ol, dl {list-style:none;}
+img, video {max-width:95%; border:0px; -webkit-touch-callout:none;}
+a {text-decoration:none; color:#000;}
+div {box-sizing:border-box; -webkit-box-sizing:border-box;}
+table {border-collapse:collapse; border-spacing:0;}
+input, select {vertical-align:middle;}
+body {font-family:"맑은 고딕", "나눔고딕", "굴림", "굴림체", "돋움", "돋움체"; font-size:100%; line-height:1;}
+label {cursor:pointer;}
+.blind, legend, hr, caption {display:block; overflow:hidden; position:absolute; top:0px;
+  left:-1000em;}
+i, em, address {font-style:normal; font-weight:normal;}
+
+  .page{
+    background-image: url('http://postfiles13.naver.net/20141102_60/weez7878_1414914854095txlPL_JPEG/%B9%E8%B0%E6.JPG?type=w3');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+      }
+  .마지막 {width:100%; margin-top:30px;}
+.마지막 h1 {font-size:20px; line-height:25px;}
+
+.테이블 {width:100%; margin-top:15px; border-top:1px solid #a0a0a0;}
+.테이블 tr.h1 {border-bottom:1px dotted #CCC;}
+.테이블 td.part {width:30%; font-size:13px; font-weight:bold; color:#333; padding:12px 0px;}
+.테이블 td.name {width:40%; font-size:13px; color:#666; padding:12px 0px;}
+span.txtB {color:#039;}
+  .이미지{
+    size:500px;
+    padding: 5px;
+  }
+  h1{
+  	text-shadow:1px 2px 3px #000;
+  	font-size: 20vw;
+    font-weight: bold;
+  }
+  .page h3{
+  	margin: 2px;
+    color: #2f4958;
+  }
+  .살인자{
+  	font-color: #2e5962;
+  }
+  .제목{
+    font-size: 12px;
+  }
+  .큰이름{
+  	font-size: 25px;
+  }
+  .첫번째{
+    width: 600px;
+    text-align: center;
+    text-shadow: 10px 10px 50px #000;
+    font-size: 4vmax;
+    color: white;
+    position: absolute;
+    left: 50%; top: 22vw;
+    margin-left: -310px;
+
+  }
+  .일번{
+    color: gray;
+  	width: 100%;
+    font-size: 3max;
+    text-align: center;
+  }
+  .이번{
+    color: gray;
+  	width: 100%;
+  	font-size: 14px;
+    text-align: center;
+  }
+  .삼번{
+    color: gray;
+    padding: 0px 50px 0px 50px;
+  	margin: 0px auto;
+    font-size: 1max;
+  }
+  .정렬{
+    display: block;
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+    .정렬2{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .체크{
+  	border-right: 1px solid gray;
+  }
+  .til{
+    font-size: 100%;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0px;
+    padding:0px;
+  }
+  li{
+    width: 100%;
+    display: inline;
+    text-align: center;
+  }
+  .일번 span {display: inline-block;}
+  .이번 span {display: inline-block;}
+  .줄거리 {width:100%; margin-top:8px; font-size:0.437em; border-top:1px solid #707070;}
+.줄거리 h3 {font-size:20px; line-height:25px; margin-top:15px;}
+.줄거리 div {font-size:15px; line-height:23px;}
+.줄거리 p {font-size:13px; line-height:14px;}
+
+.출연 { width:100%; margin-top:30px;}
+.출연 h1 {font-size:20px; line-height:25px;}
+.역활 { margin-top:10px;}
+.역활:after {content:""; display:block; clear:both;}
+.역활 li {min-width:98px; width:16.5%; height:auto; float:left;}
+.역활 li > img {width:100%; height:auto;}
+.역활 li > div {width:100%;}
+.역활 li > div p { font-size:14px; color:#039; font-weight:bold;}
+.역활 li > div span { font-size:13px; color:#C00; font-weight:normal; margin-bottom:10px;}
+.역활 li > div span span.part { color:#666; }
+.역활 li > div span span.part { border-left: 1px solid gray;}
+
+.Making {width:100%; margin-top:30px;}
+.Making p {font-size:20px; line-height:28px;}
+.Making span { font-size:14px; line-height:21px; margin-top:8px; }
+.Making span span.txtG { color:#666; margin-left:10px;}
+
+.tab td > img {width:100%; height:auto;}
+
+
+  @media print {
+
+    body{
+      max-width: 800px;
+      line-height: 20px;
+    }
+    .이미지{
+      display: none;
+    }
+    .page{
+      margin: 10px;
+    }
+    h1{
+      padding-bottom: 90px;
+      padding-top: 30px;
+      font-size: 50px;
+    }
+    .정렬{
+      margin-top:120px;
+      padding-top: 50px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .체크{
+      border:0px;
+    }
+    .역활 p{
+      color: black;
+    }
+    .큰이름{
+      font-size:10px;
+    }
+    .일번{
+      text-align: left;
+      margin-bottom: 40px;
+      margin-top: 50px;
+    }
+    .이번{
+      text-align: left;
+      padding: 0;
+      font-size: 8px;
+      margin-bottom: 40px;
+    }
+    .삼번{
+      padding: 0;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .역활 li > div span span.part{
+      border: 0;
+    }
+    .제목 {
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .역활 li > div p { color:black; font-weight: normal;}
+    .역활 li > div span {color:black;}
+    span.txtB {color:black;}
+    .역활 li > img {width:50px;}
+    .줄거리 p {line-height:20px; margin-bottom: 230px;}
+    .Making p {font-size:15px; font-weight: bold; }
+    .줄거리 h3 {font-size:15px; padding-top: 20px;}
+    .마지막 > h3 {font-size:15px;}
+    .출연 > h3 {font-size:15px; }
+}
+
+
+  </style>
+</head>
+
+<body style="margin:12px; min-width:300px;">
+  <div class="page">
+	<div class="포스터">
+	<p class="첫번째">이웃사람들이<br>놈을 눈치채기 시작했다</p>
+	<table class="tab">
+<tbody>
+<tr>
+<td><img class="이미지" src="아줌마1.jpg" alt="주인공" /></td>
+<td><img class="이미지" src="여자아이2.jpg" alt="주인공2" /></td>
+<td><img class="이미지" src="아저씨3.jpg" alt="주인공3" /></td>
+</tr>
+<tr>
+<td><img class="이미지" src="엄마4.jpg" alt="주인공4" /></td>
+<td><img class="이미지" src="살인자5.jpg" alt="주인공5" /></td>
+<td><img class="이미지" src="경비아저씨5.jpg" alt="주인공6" /></td>
+</tr>
+<tr>
+<td><img class="이미지" src="꼬마아이7.jpg" alt="주인공7" /></td>
+<td><img class="이미지" src="소방대원8.jpg" alt="주인공8" /></td>
+<td><img class="이미지" src="마동석9.jpg" alt="주인공9" /></td>
+</tr>
+</tbody>
+</table>
+<h3 class="정렬">살인마도, 그가 죽인 소녀도 모두가</h3>
+  <h1 class="정렬2">이웃사람</h1>
+<div class="일번">
+  <div class="til">
+	<span><span class="제목">감독</span> 김휘 <span class="제목">원작</span> <span class="체크">강풀</span></span>
+	<span><Span class="큰이름">김윤진 마동석</span> 김새론 김성균 임하룡 도지한 장영남</span>
+	<span class="제목1">그리고 <Span class="큰이름">천호진</span></span>
+	<span>우정출연 김정태 정인기 차광수</span>
+</div>
+</div>
+<div class="이번">
+  <ul>
+    <li>
+      <span><span class="제목">제공/배급</span><span class="체크">롯데엔터테이언트</span></span>
+    </li>
+    <li>
+      <span><span class="제목">공동제공</span>캐피탈원(주)CJ창업투자(주)소빅창업투자(주)<span class="체크">이수창업투자(주)</span></span>
+    </li>
+    <li>
+      <span><span class="제목">제작</span>영화사무쇠팔(주)플로우식스 <span class="체크">자지온ENT</span></span>
+    </li>
+    <li>
+      <span><span class="제목">공동제작</span>누리픽쳐스 히트박스 </span>
+    </li>
+  </ul>
+</div>
+<div class="삼번">
+	당신네들의 사람들의 이웃사람들을 집중조명하여 새로운 시각에서 바라보는 영화입니다 많이보세요 재미있습니다.제작 당신네들의 사람들의 이웃사람들을 집중조명하여 새로운 시각에서 바라보는 영화입니다 많이보세요 재미있습니다.제작 당신네들의 사람들의 이웃사람들을 집중조명하여 새로운 시각에서 바라보는 영화입니다 많이보세요 재미있습니다.제작 당신네들의 사람들의 이웃사람들을 집중조명하여 새로운 시각에서 바라보는 영화입니다 많이보세요 재미있습니다.제작 당신네들의 사람들의 이웃사람들을 집중조명하여 새로운 시각에서 바라보는 영화입니다 많이보세요 재미있습니다.제작 당신네들의 사람들의 이웃사람들을 집중조명하여 새로운 시각에서 바라보는 영화입니다 많이보세요 재미있습니다.제작 당신네들의 사람들의 이웃사람들을 집중조명하여 새로운 시각에서 바라보는 영화입니다 많이보세요 재미있습니다.제작 당신네들의 사람들의 이웃사람들을 집중조명하여 새로운 시각에서 바라보는 영화입니다 많이보세요 재미있습니다.제작 당신네들의 사람들의 이웃사람들을 집중조명하여 새로운 시각에서 바라보는 영화입니다 많이보세요 재미있습니다.제작 당신네들의 사람들의 이웃사람들을 집중조명하여 새로운 시각에서 바라보는 영화입니다 많이보세요 재미있습니다.
+</div>
+<div class="사번">
+	<h2 class="정렬">8월 22일 대개봉</h2>
+</div>
+</div>
+</div>
+  <div class="줄거리">
+  <h3>줄거리</h3>
+        <div>죽은 소녀도, 살인마도, 그를 막는 사람들도 모두 &lt;이웃사람&gt; </div>
+        <p>202호 소녀의 죽음, 그리고 열흘 간격으로 발생하는 연쇄살인사건 범인의 실마리는 잡히지 않고, 강산맨션의 이웃사람들은 공포에 떤다. 그러던 중 이웃사람들은 수십 만원대의 수도세, 사건발생일마다 배달시키는 피자, 사체가 담긴 가방과 똑 같은 가방을 사 간 102호 남자를 의심하기 시작한다. 그리고 살인마 또한 이웃사람들을 눈치채기 시작하고, 두 번째 소녀의 죽음을 막기 위한 마지막 대결이 시작되는데…</p>
+</div>
+<div class="출연">
+        <h3>배우/제작진</h3>
+        
+        <div class="역활">
+            <ul>
+                <li><img src="act_01.jpg" alt="김휘">
+                    <div>
+                        <p>김휘</p>
+                        <span>감독</span>
+                    </div>
+                </li>
+                <li><img src="act_02.jpg" alt="김윤진">
+                    <div>
+                        <p>김윤진</p>
+                        <span>주연<span class="part">송경희 역</span></span>
+                    </div>
+                </li>
+                <li><img src="act_03.jpg" alt="마동석">
+                    <div>
+                        <p>마동석</p>
+                        <span>주연<span class="part">안현모 역</span></span>
+                    </div>
+                </li>
+                <li><img src="act_04.jpg" alt="천호진">
+                    <div>
+                        <p>천호진</p>
+                        <span>주연<span class="part">표종록 역</span></span>
+                    </div>
+                </li>
+                <li><img src="act_05.jpg" alt="김성균">
+                    <div>
+                        <p>김성균</p>
+                        <span>주연<span class="part">류승혁 역</span></span>
+                    </div>
+                </li>
+                <li><img src="act_06.jpg" alt="김새론">
+                    <div>
+                        <p>김새론</p>
+                        <span>주연<span class="part" style="letter-spacing:-1px;">유수연/원여선 역</span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>   
+    </div>
+     <div class="마지막">
+        <h3>제작진</h3>
+        
+        <div class="마지막막">
+            <table class="테이블">
+                <tr class="h1">
+                    <td class="part">각본</td>
+                    <td class="name"><span class="txtB">김휘</span> Kim Hui (각색)</td>
+                    <td class="name"><span class="txtB">강풀</span> (원작)</td>
+                </tr>
+                <tr class="h1">
+                    <td class="part">제작</td>
+                    <td class="name"><span class="txtB">이상무</span> (투자총괄)
+                    <p><span class="txtB">이성훈</span> (제작부장)</p>
+                    <p><span class="txtB">박인규</span> (제작부) </p>
+                    <p><span class="txtB">김계림</span> (제작부) </p>
+                    <p><span class="txtB">유재현</span> (제작)</p>
+                    <p><span class="txtB">이동휘</span> (제작관리)</p>
+                    <p><span class="txtB">전용욱</span> (제작관리) </p>
+                    <p><span class="txtB">손광익</span> (제작투자) </p>
+                    <p><span class="txtB">이진성</span> (투자지원)</p>
+                    <p><span class="txtB">이경범</span> (투자지원)</p>
+                    <p><span class="txtB">이현송</span> (투자지원) </p>
+                    <p><span class="txtB">박세준</span> (투자지원) </p>
+                    <p><span class="txtB">이용호</span> (공동제작)</p>
+                    <p><span class="txtB">서정수</span> (공동투자) </p>
+                    <p><span class="txtB">김영돈</span> (공동투자)</p>
+                    <p><span class="txtB">채윤</span> (공동투자)</p>                    
+
+ </td>
+                    <td class="name"><span class="txtB">석재승</span> (프로듀서)
+                    <p><span class="txtB">유승우</span> (제작부장)</p>
+                    <p><span class="txtB">염태환</span> (제작부)</p>
+                    <p><span class="txtB">구성목</span> (제작)</p>
+                    <p><span class="txtB">박정혁</span> (제작)</p>
+                    <p><span class="txtB">홍라경</span> (제작관리)</p>
+                    <p><span class="txtB">이은</span> (제작회계)</p>
+                   <p> <span class="txtB">이영한</span> (투자기획)</p>
+                    <p><span class="txtB">김영일</span> (투자지원)</p>
+                   <p> <span class="txtB">진영재</span> (투자지원)</p>
+                    <p><span class="txtB">조성철</span> (투자지원)</p>
+                    <p><span class="txtB">이진훈</span> (투자책임)</p>
+                    <p><span class="txtB">여한구</span> (공동투자)</p>
+                   <p> <span class="txtB">신강영</span> (공동투자)</p>
+                    <p><span class="txtB">진영아</span> (공동투자)</p>
+                    <p><span class="txtB">한재훈</span> (라인프로듀서)</p>
+                    </td>
+                </tr>
+                <tr class="h1">
+                    <td class="part">기획</td>
+                    <td class="name" colspan="2"><span class="txtB">윤종호</span> (기획)</td>
+                </tr>
+                 <tr class="h1">
+                    <td class="part">촬영</td>
+                    <td class="name"><span class="txtB">조용운</span> (촬영부)
+                    <p><span class="txtB">김지룡</span> (촬영부)</p>
+                    <p><span class="txtB">정성욱</span> (촬영)</p>
+                    <p><span class="txtB">이재건</span> (조명부)</p>
+                    <p><span class="txtB">정종우</span> (조명부)</p>
+                    <p><span class="txtB">권소해</span> (조명부)</p>
+                    <p><span class="txtB">김용태</span> (키그립)</p>                
+
+ </td>
+                    <td class="name"><span class="txtB">가정화</span> (촬영부)
+                    <p><span class="txtB">김종현</span> (촬영부)</p>
+                    <p><span class="txtB">고용진</span> (조명)</p>
+                    <p><span class="txtB">홍성준</span> (조명부)</p>
+                    <p><span class="txtB">황보성</span> (조명부)</p>
+                    <p><span class="txtB">이중완</span> (그립)</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+        <div class="Making">
+        <p>제작/수입/배급사</p>
+        
+        <span>제작 <span class="txtG">영화사 무쇠팔, 플로우식스, 자이온 엔터테인먼트</span> </span>
+        <span>배급 <span class="txtG">롯데 엔터테인먼트</span> </span>
+    </div>
+</body>
+</html>
