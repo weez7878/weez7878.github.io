@@ -10,6 +10,7 @@
             box-sizing: border-box;
         }
         body {
+            max-width: 100%;
             padding: 0;
             margin: 0;
             height: 100%;
@@ -41,10 +42,16 @@
             vertical-align: top;
         }
         h2{
+            padding: 0px 0 0px 40px;
             display: inline;
-            margin: 0 30px 0 0px;
+            margin: 0 30px 0px 0px;
+        }
+        .박스1{
+            color: white;
+            background-color: blue;
         }
         .박스2{
+            background-color: gray;
             margin: 0 0px 0 10px;
         }
         section.첫번째 {
@@ -107,13 +114,21 @@
         }
 
         .모음{
+
                  border-bottom: 1px solid #eee;
              height: 20%;
                background-color: white;
-              padding: 0;
+              padding: 20px 0 20px 0;
               margin: 0;
         }
+        .모음2{
 
+            border-bottom: 1px solid #eee;
+            height: 10%;
+            background-color: white;
+            padding: 20px 0 0 0;
+            margin: 0;
+        }
 
         img{
             border-radius: 50%;
@@ -165,10 +180,39 @@
             float: right;
         }
         .마진{
+            display: inline;
+            color: gray;
             margin-left: 100px;
         }
-
-        @media screen and (max-width:800px){
+        .마지막{
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .색{
+            color: white;
+            background-color: red;
+        }
+        .색2{
+            color:white;
+            background-color: blue;
+        }
+        .색3{
+            font-weight: bold;
+            color:blue;
+        }
+        .색4{
+            color: white;
+            background-color: green;
+        }
+        .회색{
+            color: gray;
+        }
+        .컬러{
+            font-weight: bold;
+            display: inline;
+            color: blue;
+        }
+        @media screen and (max-width:1200px){
         
         section.두번째 {
             width: 100%;
@@ -238,26 +282,29 @@
                 <img class="사진" src="http://google.github.io/material-design-icons/action/svg/ic_account_child_24px.svg" alt="account child">
                 <div class="묶음">
                 <h3 class="이름1">Social</h3>
-                <div>Google+</div>
+                <div class="회색">Google+</div>
                 <div class="오른쪽">
-                1 new</div>
+                <span class="색">1 new</span></div>
                </div>
             <li class="모음">
                 <img class="사진" src="http://google.github.io/material-design-icons/maps/svg/ic_local_offer_24px.svg" alt="local offer">
                 <div class="묶음">
                 <h3 class="이름1">Promotions</h3>
-                <div>zagat, Google Offers</div>
+                <div class="회색">zagat, Google Offers</div>
                 <div class="오른쪽">
-                2 new</div>
+                <span class="색2">
+                2 new</span></div>
                 </div>
             </li>
             <li class="모음">
                 <img class="사진" src="http://google.github.io/material-design-icons/alert/svg/ic_error_24px.svg" alt="error">
                 <div class="묶음">
                 <h3 class="이름1">Updates</h3>
-                <div>Google Play</div>
+                <div class="회색">Google Play</div>
                 <div class="오른쪽">
-                1 new</div>
+                <span class="색4">
+                    1 new
+                </span></div>
                 </div>
             </li>
             <li class="모음">
@@ -265,7 +312,7 @@
                 <div class="묶음">
                 <h3 class="이름2">Andy Brown</h3>
                 <div class="시간">1:45 PM</div>
-                <p>Bring Your Parents to Work Day! Hey! What do you think about a Team Lunch: Parent...</p>
+                <p class="회색">Bring Your Parents to Work Day! Hey! What do you think about a Team Lunch: Parent...</p>
                 </div>
                 <div class="오른쪽">
                 work
@@ -276,12 +323,16 @@
                 <img class="사진" src="http://cafeptthumb3.phinf.naver.net/20140218_25/weez7878_1392657494200YPbzw_JPEG/1497702_616811138377824_598789306_n.jpg?type=w740" alt="김흥기" width="30">
                 <div class="묶음">
                 <h3 class="이름1">Keri Anderson</h3>
+                <br>
+                <h3 class="이름1">Picture from last Saturday</h3>
                 <div class="시간">
                 <img src="http://google.github.io/material-design-icons/editor/svg/ic_attach_file_24px.svg" alt="attach file" width="30">
+                <span class="색3">
                 1:39 PM
+            </span>
             </div>
-                <h3 class="이름1">Picture from last Saturday</h3>
-                <p>Check out the new friend we made, Merrill and i ran into him...</p>
+                
+                <p class="회색">Check out the new friend we made, Merrill and i ran into him...</p>
                 <div class="오른쪽">
                 <img class="별" src="http://google.github.io/material-design-icons/action/svg/ic_grade_24px.svg" alt="별" width="30">
                </div>
@@ -293,9 +344,9 @@
                 <div class="이름2">Regis, Peter Rachel 3</div>
                 <div class="시간">Sep 29</div>
                 <div>Board game night?</div>
-                <p>Sunday works! if you can get Dexter and Sophie I will...</p>
+                <p class="회색">Sunday works! if you can get Dexter and Sophie I will...</p>
                 <div class="오른쪽">
-                <span class="별옆">
+                <span class="색2">
                 Fun
                 </span>
                 <img class="별" src="http://google.github.io/material-design-icons/action/svg/ic_grade_24px.svg" alt="별" width="30">
@@ -308,10 +359,12 @@
                 <h3 class="이름1">Aruna Knight</h3>
                 <div class="시간">Sep 29</div>
                 <h3 class="이름1">Book you recommended</h3>
-                <p>About to go on a trip and was hoping to start that b...</p>
+                <p class="회색">About to go on a trip and was hoping to start that b...</p>
                 <div class="오른쪽">
                 <span class="별옆">
+                <span class="색2">
                 Family
+                </span>
                 </span>
                 <img class="별" src="http://google.github.io/material-design-icons/action/svg/ic_grade_24px.svg" alt="별" width="30">
                 </div>
@@ -325,7 +378,7 @@
                 <img  src="http://google.github.io/material-design-icons/editor/svg/ic_attach_file_24px.svg" alt="attach file" width="30">
                 Sep 29
               </div>
-                <div>Oops...need to reschedule</div>
+                <div class="회색">Oops...need to reschedule</div>
                 <p>That's okay Peter! l've attached a few pictures of my place f...</p>
                 <div class="오른쪽">
                 
@@ -338,7 +391,7 @@
                 <div class="묶음">
                 <h3 class="이름1">Anissa Lee</h3>
                 <div class="시간">Sep 29</div>
-                <P>Furniture we no longer need</p>
+                <P class="회색">Furniture we no longer need</p>
                 </div>
             </li>
             </ul>
@@ -349,11 +402,13 @@
 
 
         <section class="세번째">
+        <div class="모음2">
         <h2 class="페이지2">Board game night?</h2>
         <span class="박스1">fun</span> 
         <span class="박스2">inbox</span>
         <div class="시간"><img class="별" src="http://google.github.io/material-design-icons/action/svg/ic_grade_24px.svg" alt="별" width="30">
         </div>
+       </div>
         <ul>
             <li class="모음">
                 <div class="밑줄">
@@ -361,7 +416,7 @@
                 <div class="묶음">
                 <h3 class="이름2">Regis Miller</h3>
                 <div class="시간">Sep 29</div>
-                <p>Maria, I'm trying to schedule a board game night this week, when would you be...</p>
+                <p class="회색">Maria, I'm trying to schedule a board game night this week, when would you be...</p>
               </div>
                </div>
             </li>
@@ -371,7 +426,7 @@
                 <div class="묶음">
                 <h3 class="이름2">Peter Johnson</h3>
                 <div class="시간">Sep 29</div>
-                <p>What do you think about Sunday? My car seats five so I could pick up Dexter a...</p>
+                <p class="회색">What do you think about Sunday? My car seats five so I could pick up Dexter a...</p>
               </div>
                 </div>
             </li>
@@ -384,13 +439,15 @@
                 <img class="옆" src="http://google.github.io/material-design-icons/content/svg/ic_forward_24px.svg" alt="forward">
                 <img class="옆" src="http://google.github.io/material-design-icons/navigation/svg/ic_more_vert_24px.svg" alt="morevert">
                 
-                <div>to me</div>
-                <div class="마진">Sep 29 View details</div>
+                <div class="회색">to me</div>
+                <div class="마진">Sep 29 <div class="컬러">View details</div></div>
               </div>
             </li>
         </ul>
+        <div class="마지막">
         <p>Sunday works! If you can get Dexter and Sophie I will handle the chips and salsa.</p>
-        <span>Show quoted text</span>
+        <span class="컬러">Show quoted text</span>
+    </div>
     <section class="하단">
         <table>
             <tr>
